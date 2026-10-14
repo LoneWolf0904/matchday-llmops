@@ -1,0 +1,51 @@
+# --- Secrets (never commit) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials
+.aws/
+secrets/
+
+# --- Raw data (downloaded by scripts, see scripts/) ---
+data/
+*.pdf
+*.sqlite3
+
+# --- Vector store / local indexes ---
+chroma/
+.chroma/
+vectorstore/
+
+# --- Langfuse / docker local state ---
+langfuse-data/
+postgres-data/
+docker-compose.override.yml
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Node (promptfoo) ---
+node_modules/
+
+# --- Eval outputs (keep golden datasets, ignore run artefacts) ---
+evals/results/
+evals/.cache/

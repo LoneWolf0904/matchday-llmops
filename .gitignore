@@ -49,3 +49,5 @@ node_modules/
 # --- Eval outputs (keep golden datasets, ignore run artefacts) ---
 evals/results/
 evals/.cache/
+
+Claude outputs/
